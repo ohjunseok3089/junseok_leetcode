@@ -30,3 +30,16 @@ class Solution {
         return anagramChecker1.equals(anagramChecker2);
     }
 }
+
+// Runtime: 6 ms, faster than 60.35% of Java online submissions for Valid Anagram.
+// Memory Usage: 44.2 MB, less than 46.04% of Java online submissions for Valid Anagram.
+
+class Solution2 {
+    public boolean isAnagram(String s, String t) {
+        if (s.length() != t.length()) return false;
+        int[] ana = new int[26];
+        for (char c : s.toCharArray()) ana[c - 'a']++;
+        for (char c : t.toCharArray()) if (--ana[c -'a'] < 0) return false;
+        return true;
+    }
+}
