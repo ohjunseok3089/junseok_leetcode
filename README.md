@@ -17,4 +17,5 @@ https://leetcode.com/discuss/career/448285/List-of-questions-sorted-by-common-pa
     - This is an effective way to catch the duplicates.
 
 ## Sort
-  - Collections.sort(Array);
+  - Arrays.sort(Array)
+  - Collections.sort(ArrayLists);
